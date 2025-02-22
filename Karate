@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karate Class - Join Now!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        .photos {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .photos img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+        }
+        .discount {
+            background-color: #ffcc00;
+            padding: 10px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .info {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Our Karate Class!</h1>
+        <div class="photos">
+            <img src="photo1.jpg" alt="Karate Class Photo 1">
+            <img src="photo2.jpg" alt="Karate Class Photo 2">
+            <img src="photo3.jpg" alt="Karate Class Photo 3">
+            <img src="photo4.jpg" alt="Karate Class Photo 4">
+        </div>
+        <div class="discount">
+            <h2>Special Offer!</h2>
+            <p>Working females get a <strong>20% discount</strong> on all classes!</p>
+        </div>
+        <div class="info">
+            <h2>About Our Karate Class</h2>
+            <p>Our karate class is open to everyone aged 10 and above. Whether you're a beginner or looking to advance your skills, our experienced instructors are here to guide you every step of the way.</p>
+            <p>Join us to improve your fitness, learn self-defense, and gain confidence in a supportive and friendly environment.</p>
+            <h3>Class Details:</h3>
+            <ul>
+                <li><strong>Age Group:</strong> 10 years and above</li>
+                <li><strong>Discount:</strong> 20% off for working females</li>
+                <li><strong>Location:</strong> [Insert Location Here]</li>
+                <li><strong>Timings:</strong> [Insert Class Timings Here]</li>
+            </ul>
+            <p>Contact us today to sign up or for more information!</p>
+            <p><strong>Phone:</strong> [Insert Phone Number] | <strong>Email:</strong> [Insert Email Address]</p>
+        </div>
+    </div>
+</body>
+</html>
