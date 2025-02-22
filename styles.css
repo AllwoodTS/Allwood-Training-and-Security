@@ -4,288 +4,103 @@ body {
   margin: 0;
   padding: 0;
   color: #333;
-  background-image: url('logo.png'); /* Add logo as background */
-  background-size: cover; /* Cover the entire page */
-  background-repeat: no-repeat; /* Prevent the logo from repeating */
-  background-position: center; /* Center the logo */
-  background-attachment: fixed; /* Keep the logo fixed while scrolling */
+  background-color: #f4f4f4; /* Light gray background */
 }
 
 header {
-  background-color: rgba(0, 51, 102, 0.8); /* Semi-transparent navy blue overlay */
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative; /* Ensure header is above the background */
-  z-index: 1; /* Bring header to the front */
+  background-color: #333; /* Dark background for header */
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
 }
 
-.logo-container .logo {
-  height: 60px;
+header .logo-container {
+  margin-bottom: 10px;
+}
+
+header .logo {
+  max-width: 150px;
+  height: auto;
 }
 
 nav ul {
   list-style: none;
-  margin: 0;
   padding: 0;
+  margin: 0;
   display: flex;
+  justify-content: center;
 }
 
 nav ul li {
-  margin-left: 20px;
+  margin: 0 15px;
 }
 
 nav ul li a {
-  color: #ffcc00; /* Mustard Yellow */
+  color: #fff;
   text-decoration: none;
   font-weight: bold;
 }
 
-.hero {
-  background-color: rgba(0, 80, 158, 0.8); /* Semi-transparent blue overlay */
-  color: white;
-  text-align: center;
-  padding: 100px 20px;
-  margin: 20px;
-  border-radius: 10px;
+main {
+  padding: 20px;
 }
 
-.cta-button {
-  background-color: #ffcc00; /* Mustard Yellow */
-  color: #003366; /* Navy Blue */
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-  background-color: #e6b800; /* Darker Mustard Yellow on Hover */
-}
-
+/* Achievements Section */
 .achievements {
-  padding: 50px 20px;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white overlay */
-  margin: 20px;
-  border-radius: 10px;
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Photo Gallery Styles */
+.achievements h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.achievements ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+/* Photo Gallery Section */
 .photo-gallery {
-  padding: 50px 20px;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white overlay */
-  margin: 20px;
-  border-radius: 10px;
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .photo-gallery h2 {
-  color: #003366; /* Navy Blue */
-  margin-bottom: 20px;
+  margin-top: 0;
+  color: #333;
 }
 
 .photos {
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
-  gap: 20px; /* Space between photos */
+  gap: 15px;
 }
 
 .photos img {
-  width: 30%; /* Adjust the width of each photo */
-  max-width: 300px; /* Maximum width for larger screens */
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
 .photos img:hover {
-  transform: scale(1.05); /* Slightly enlarge on hover */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+  transform: scale(1.05);
 }
 
-/* Register Now Section */
-.register-now {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 50px 20px;
-  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white overlay */
-  margin: 20px;
-  border-radius: 10px;
-}
-
-.register-content {
-  flex: 1;
-  max-width: 50%;
-}
-
-.register-content h2 {
-  color: #003366; /* Navy Blue */
-  margin-bottom: 20px;
-}
-
-.register-content p {
-  color: #333;
-  margin-bottom: 20px;
-}
-
-.register-image {
-  flex: 1;
-  max-width: 50%;
-  text-align: center;
-}
-
-.register-image img {
-  width: 100%;
-  max-width: 400px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Online Courses Section */
-.online-courses {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 50px 20px;
-  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white overlay */
-  margin: 20px;
-  border-radius: 10px;
-}
-
-.courses-content {
-  flex: 1;
-  max-width: 50%;
-}
-
-.courses-content h2 {
-  color: #003366; /* Navy Blue */
-  margin-bottom: 20px;
-}
-
-.courses-content p {
-  color: #333;
-  margin-bottom: 20px;
-}
-
-.courses-image {
-  flex: 1;
-  max-width: 50%;
-  text-align: center;
-}
-
-.courses-image img {
-  width: 100%;
-  max-width: 400px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* About Us Section */
-.about-us {
-  padding: 50px 20px;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white overlay */
-  margin: 20px;
-  border-radius: 10px;
-}
-
-.about-us h2 {
-  color: #003366; /* Navy Blue */
-  margin-bottom: 20px;
-}
-
-.vision-statement {
-  max-width: 800px;
-  margin: 0 auto 40px;
-  text-align: left;
-}
-
-.vision-statement h3 {
-  color: #003366; /* Navy Blue */
-  margin-bottom: 15px;
-}
-
-.vision-statement p {
-  color: #333;
-  line-height: 1.6;
-}
-
-/* About Us Photo Gallery */
-.about-gallery {
-  margin-top: 40px;
-}
-
-.about-gallery h3 {
-  color: #003366; /* Navy Blue */
-  margin-bottom: 20px;
-}
-
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
-  gap: 20px; /* Space between photos */
-  padding: 10px;
-}
-
-.gallery-grid img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
-}
-
-.gallery-grid img:hover {
-  transform: scale(1.05); /* Slightly enlarge on hover */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
-}
-
-.registration-form {
-  max-width: 400px;
-  margin: 50px auto;
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white overlay */
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.registration-form label {
-  display: block;
-  margin-bottom: 10px;
-}
-
-.registration-form input {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.registration-form button {
-  background-color: #ffcc00; /* Mustard Yellow */
-  color: #003366; /* Navy Blue */
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.hidden {
-  display: none;
-}
-
+/* Footer */
 footer {
-  background-color: rgba(0, 51, 102, 0.8); /* Semi-transparent navy blue overlay */
-  color: white;
+  background-color: #333;
+  color: #fff;
   text-align: center;
-  padding: 20px;
-  margin-top: 50px;
-  position: relative; /* Ensure footer is above the background */
-  z-index: 1; /* Bring footer to the front */
+  padding: 10px 0;
+  margin-top: 20px;
 }
