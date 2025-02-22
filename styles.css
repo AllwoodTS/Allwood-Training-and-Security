@@ -45,6 +45,66 @@ main {
   padding: 20px;
 }
 
+/* About Us Section */
+.about-us {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white overlay */
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.about-us h2 {
+  color: #003366; /* Navy Blue */
+  margin-bottom: 20px;
+}
+
+.vision-statement {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  text-align: left;
+}
+
+.vision-statement h3 {
+  color: #003366; /* Navy Blue */
+  margin-bottom: 15px;
+}
+
+.vision-statement p {
+  color: #333;
+  line-height: 1.6;
+}
+
+/* About Us Photo Gallery */
+.about-gallery {
+  margin-top: 40px;
+}
+
+.about-gallery h3 {
+  color: #003366; /* Navy Blue */
+  margin-bottom: 20px;
+}
+
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px; /* Space between photos */
+  justify-content: center; /* Center the images */
+}
+
+.gallery-grid img {
+  width: 200px; /* Fixed width for all images */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
 /* Achievements Section */
 .achievements {
   background-color: #fff;
