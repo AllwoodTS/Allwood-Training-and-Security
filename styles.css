@@ -82,11 +82,12 @@ main {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
+  justify-content: center; /* Center the images */
 }
 
 .photos img {
-  max-width: 100%;
-  height: auto;
+  width: 200px; /* Fixed width for all images */
+  height: auto; /* Maintain aspect ratio */
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
@@ -95,7 +96,6 @@ main {
 .photos img:hover {
   transform: scale(1.05);
 }
-
 /* Footer */
 footer {
   background-color: #333;
