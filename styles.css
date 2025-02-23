@@ -5,8 +5,34 @@ body {
   padding: 0;
   color: #333;
   background-color: #f4f4f4; /* Light gray background */
+  background-image: url('logo.png'); /* Add your background image here */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
+/* Overlay for pages with background images */
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container for centered content */
+.container {
+  width: 80%;
+  max-width: 800px;
+  background-color: navy; /* Navy blue background for text */
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+/* Header */
 header {
   background-color: #333; /* Dark background for header */
   color: #fff;
@@ -41,6 +67,7 @@ nav ul li a {
   font-weight: bold;
 }
 
+/* Main Content */
 main {
   padding: 20px;
 }
@@ -156,6 +183,33 @@ main {
 .photos img:hover {
   transform: scale(1.05);
 }
+
+/* Discount Section */
+.discount {
+  background-color: #ffcc00; /* Yellow background for discount section */
+  color: navy; /* Navy blue text for discount section */
+  padding: 10px;
+  margin: 20px 0;
+  border-radius: 5px;
+}
+
+/* Info Section */
+.info {
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.info ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.info ul li {
+  margin: 10px 0;
+}
+
 /* Footer */
 footer {
   background-color: #333;
